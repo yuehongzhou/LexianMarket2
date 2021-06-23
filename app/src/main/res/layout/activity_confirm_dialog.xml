@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="340dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_dialog"
+    android:orientation="vertical"
+
+    tools:context=".activity.ConfirmDialog">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:gravity="center"
+            android:text="请确认车牌信息无误"
+            android:padding="12dp"/>
+    <TextView
+        android:id="@+id/alert_dialog_text"
+        android:layout_width="310dp"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:textColor="@android:color/black"
+        android:gravity="center"
+        android:background="@drawable/confirm_cancel_tv"
+        android:layout_gravity="center"
+
+        android:padding="12dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:orientation="horizontal"
+            >
+
+            <Button
+                android:id="@+id/alert_dialog_btn_cancel"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:background="@drawable/confirm_cancel"
+                android:textColor="@android:color/black"
+                android:textAllCaps="false"
+                android:padding="10dp"
+                android:text="@string/cancel"
+                android:onClick="cdListener"/>
+
+            <Space    android:layout_width="5dp"    android:layout_height="match_parent" />
+
+            <Button
+                android:id="@+id/alert_dialog_btn_confirm"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:background="@drawable/confirm_cancel2"
+                android:textColor="@android:color/black"
+                android:textAllCaps="false"
+                android:padding="10dp"
+                android:text="@string/confirm"
+                android:onClick="cdListener"/>
+
+        </LinearLayout>
+
+
+
+</LinearLayout>

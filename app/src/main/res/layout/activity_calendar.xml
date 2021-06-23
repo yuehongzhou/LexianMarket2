@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <com.example.administrator.lexianmarket.activity.MyCalendar
+        android:id="@+id/mycalendar"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:layout_centerInParent="true"
+        app:dateformat="MM yyyy"
+        app:titleColor="@color/bg_header"
+        app:titleSize="10sp"
+        app:dayInMonthColor="#d16e27"
+        app:dayOutMonthcolor="#9f9494"
+        app:todayColor="@color/bg_header"
+        app:todayEmptycircleColor="@color/bg_header"
+        app:todayFillcircleColor="#ffa0e0"
+        android:background="@drawable/bg_white_selector_all"
+        >
+
+    </com.example.administrator.lexianmarket.activity.MyCalendar>
+</RelativeLayout>

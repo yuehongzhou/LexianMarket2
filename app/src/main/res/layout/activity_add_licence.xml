@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.AddLicence"
+    android:id="@+id/main_rl_container"
+
+    >
+    <com.example.administrator.lexianmarket.activity.LicensePlateView
+        android:id="@+id/activity_lpv"
+        android:layout_width="400dp"
+        android:layout_height="48dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginRight="70dp"
+        android:layout_marginTop="120dp"
+        >
+
+    </com.example.administrator.lexianmarket.activity.LicensePlateView>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true">
+        <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="10dp"
+
+        android:layout_toLeftOf="@id/textView7"
+        android:src="@drawable/car"
+        android:scaleType="fitXY"/>
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="输入要添加的车牌号"
+            android:textSize="20dp"
+            android:layout_marginTop="39dp"
+            android:layout_centerHorizontal="true" />
+    </LinearLayout>
+    <Button
+        android:id="@+id/btn_clean"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/activity_lpv"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="39dp"
+        android:background="@android:color/transparent"
+        android:text="清空车牌号"
+        android:textColor="@color/bg_grey" />
+
+    <Button
+        android:id="@+id/btn_change"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/activity_lpv"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="39dp"
+        android:background="@android:color/transparent"
+        android:text="+ 新能源车牌"
+        android:textColor="@color/bg_grey" />
+
+    <Button
+        android:id="@+id/ok"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="确    定"
+        android:textSize="20dp"
+        android:background="@drawable/add_licence_bt_cd"
+        android:layout_below="@id/btn_change"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"/>
+
+
+
+</RelativeLayout>

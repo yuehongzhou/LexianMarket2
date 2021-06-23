@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:background="@drawable/order_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="3dp"
+        android:padding="25dp">
+
+        <LinearLayout
+            android:id="@+id/ll_go_store"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="10dip"
+                android:layout_height="match_parent" />
+            <TextView
+                android:id="@+id/tv_id"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/pay_id"
+                android:textSize="15dip" />
+
+            <ImageView
+                android:id="@+id/common_title_next"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/dialog_back_right" />
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_order_no_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/carno" />
+
+            <TextView
+                android:id="@+id/tv_carno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_alignTop="@id/tv_order_no_name"
+                android:layout_toRightOf="@id/tv_order_no_name"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/tv_order_date_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/tv_order_no_name"
+                android:layout_below="@id/tv_order_no_name"
+                android:layout_marginTop="10dp"
+                android:text="@string/creation_date" />
+
+            <TextView
+                android:id="@+id/tv_jiaqitime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/tv_order_date_name"
+                android:layout_toRightOf="@id/tv_order_date_name"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/tv_order_jiaqi_amount_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_order_date_name"
+                android:layout_alignLeft="@id/tv_order_no_name"
+                android:layout_marginTop="10dp"
+                android:text="@string/jiaqi_amount" />
+            <TextView
+                android:id="@+id/tv_jiaqi_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_alignTop="@id/tv_order_jiaqi_amount_name"
+                android:layout_toRightOf="@id/tv_order_no_name"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/tv_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/tv_order_jiaqi_amount_name"
+                android:layout_marginRight="20dp"
+                android:text="140.00" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/tv_money"
+                android:layout_toLeftOf="@id/tv_money"
+                android:text="@string/total_price" />
+
+            <TextView
+                android:id="@+id/tv_payway"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/tv_money"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/radioButton_xuni" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/tv_payway"
+                android:layout_toLeftOf="@id/tv_payway"
+                android:text="@string/payWay" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

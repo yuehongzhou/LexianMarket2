@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DateChoose"
+    android:background="@drawable/date_bg">
+    <include
+        android:id="@+id/title"
+        layout="@layout/item_common_header">
+    </include>
+
+    <RelativeLayout
+        android:id="@+id/relative"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:layout_below="@+id/title"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/data_choose_bg">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30dp"
+            app:srcCompat="@drawable/date_pick_bg"
+            />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/imageView"
+            android:layout_centerVertical="true"
+            android:text="今日加气"
+            android:textColor="@color/bg_header"/>
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/date_see"
+            android:textColor="@color/bg_white"
+            android:textSize="20sp"
+            android:text="查看"
+            android:onClick="look"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relative"
+        android:textSize="20sp"
+        android:textColor="@color/colorWhite"
+        android:layout_marginLeft="20dp"
+
+        android:text="点击日期查看加气记录" />
+
+    <com.example.administrator.lexianmarket.activity.MyCalendar
+        android:id="@+id/mycalendar"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        app:dateformat="MM yyyy"
+        app:titleColor="@color/bg_header"
+        app:titleSize="10sp"
+        app:dayInMonthColor="#d16e27"
+        app:dayOutMonthcolor="#9f9494"
+        app:todayColor="@color/bg_header"
+        app:todayEmptycircleColor="@color/bg_header"
+        app:todayFillcircleColor="#ffa0e0"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/data_choose_bg"
+        >
+
+    </com.example.administrator.lexianmarket.activity.MyCalendar>
+    <RelativeLayout
+        android:id="@+id/relative2"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:layout_below="@+id/mycalendar"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/data_choose_bg">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30dp"
+            app:srcCompat="@drawable/date_pick_bg"
+            />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/imageView2"
+            android:layout_centerVertical="true"
+            android:text="本周加气"
+            android:textColor="@color/bg_header"/>
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/date_see"
+            android:textColor="@color/bg_white"
+            android:textSize="20sp"
+            android:text="查看"
+            android:onClick="look"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/relative3"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:layout_below="@+id/relative2"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/data_choose_bg">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30dp"
+            app:srcCompat="@drawable/date_pick_bg"
+            />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/imageView3"
+            android:layout_centerVertical="true"
+            android:text="本月加气"
+            android:textColor="@color/bg_header"/>
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/date_see"
+            android:textColor="@color/bg_white"
+            android:textSize="20sp"
+            android:text="查看"
+            android:onClick="look"/>
+    </RelativeLayout>
+</RelativeLayout>

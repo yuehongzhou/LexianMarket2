@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_marginLeft="10dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/ic_cart"
+        >
+
+    </ImageView>
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:text="@string/price"/>
+
+        <TextView
+            android:id="@+id/tv_carno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/store_name"
+            android:textColor="#000000"
+            android:textStyle="bold"
+
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@id/tv_time" />
+        <TextView
+            android:id="@+id/tv_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/tv_carno"
+
+            android:layout_marginLeft="15dp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:text="@string/total_price"
+            />
+
+        <TextView
+            android:id="@+id/tv_money"
+            android:layout_width="wrap_content"
+            android:lines="1"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/tv_amount"
+            android:text="@string/total_price"
+            android:layout_marginLeft="15dp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            />
+
+    </RelativeLayout>
+    <ImageView
+        android:id="@+id/iv_detail"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        app:srcCompat="?android:attr/actionModeWebSearchDrawable"
+        >
+
+    </ImageView>
+
+</RelativeLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+     
+    <color name="text_inactive">#9B9B9B</color>
+    <color name="text_active">#F0973E</color>
+    <color name="bg_header">#ff8d3b</color>
+
+    <color name="text_white">#FFFFFF</color>
+    <color name="text_black">#000000</color>
+    <color name="text_red">#FF0000</color>
+    <color name="text_default">#787878</color>
+
+    <color name="bg_body">#F2F2F2</color>
+    <color name="bg_inactive">#9B9B9B</color>
+    <color name="bg_active">#F0983D</color>
+    <color name="bg_fragment">#4D4D4D</color>
+    <color name="bg_gridview">#FFE8ECEF</color>
+    <color name="bd_gridview_line">#FFD3DDE6</color>
+
+    <color name="bg_white">#FFFFFF</color>
+    <color name="bg_black">#000000</color>
+    <color name="bg_grey">#9B9B9B</color>
+    <color name="bg_default">#F0F0F0</color>
+
+    <color name="text_login_input">#DB8B40</color>
+    <color name="bg_login_input">#DB8B40</color>
+    <color name="bg_btn">#F0973E</color>
+    <color name="bg_btn_stroke">#FFB152</color>
+    <color name="bg_store_spinner">#737373</color>
+    <color name="bg_category_selected">#F0F0F0</color>
+    <color name="bg_category_selected_view">#F0973E</color>
+    <color name="blue">#87CEFA</color>
+
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="jqz_green_light">#ff99cc00</color>
+    <color name="jqz_green_dark">#ff669900</color>
+    <color name="jqz_orange_light">#ffffbb33</color>
+    <color name="jqz_orange_dark">#ffff8800</color>
+    <color name="highlighted_text_jqz_dark">#6633b5e5</color>
+    <color name="jqz_gray_light">#33999999</color>
+    <color name="jqz_light_control_normal">#dacccccc</color>
+    <color name="jqz_light_button_pressed">#66666666</color>
+    <color name="jqz_light_button_normal">#b3cccccc</color>
+
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorKeyboardBlue">#7DAFFF</color>
+    <color name="colorMainBlue">#7CAFFF</color>
+    <color name="colorKeyboardGray">#CCCCCC</color>
+    <color name="colorCodeGray">#8B99AE</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorKeyboardBg">#CCD0D7</color>
+
+    <color name="sc_transparent_background">#00111111</color>
+    <color name="jiaqi_bg1">#E6E6FA</color>
+    <color name="jiaqi_bg2">#FFF68F</color>
+
+</resources>
