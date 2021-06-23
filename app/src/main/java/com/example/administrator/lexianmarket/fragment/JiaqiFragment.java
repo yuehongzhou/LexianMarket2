@@ -77,6 +77,7 @@ public class JiaqiFragment extends Fragment{
     List<String> carnoList;//获取车辆
     AlertDialog alertDialog;
     View choiceView;
+    int a=1;
 
     public static List<ItemEntity> car2timeList = new ArrayList<ItemEntity>();
     public static List<ItemEntity> car2qiangList = new ArrayList<ItemEntity>();
